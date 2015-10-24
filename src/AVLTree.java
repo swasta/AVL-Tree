@@ -220,11 +220,11 @@ public class AVLTree {
         }
     }
 
-    private void preOrder(Node root) {
+    private void preOrderPrint(Node root) {
         if (root != null) {
             System.out.println(root.data);
-            preOrder(root.left);
-            preOrder(root.right);
+            preOrderPrint(root.left);
+            preOrderPrint(root.right);
         }
     }
 }
